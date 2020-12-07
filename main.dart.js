@@ -3193,36 +3193,39 @@ G.cD.prototype={
 $1:function(a){C.i.ar(this.a)},
 $S:2}
 F.dg.prototype={
-$1:function(a){var t,s,r,q,p,o,n,m,l,k,j,i,h,g
+$1:function(a){var t,s,r,q,p,o,n,m,l,k,j,i,h,g,f
 u.I.a(a)
-try{p=document
-J.dS(p.querySelector("input"))
-o=u.q
-t=o.a(p.querySelector("#emailField")).value
-s=o.a(p.querySelector("#domainField")).value
-r=o.a(p.querySelector("#masterPasswordField")).value
-q=o.a(p.querySelector("#idField")).value
-o=t
-n=s
-m=r
-l=q
-k=H.fp(l,null)==null?"ID should be a number":""
-if(C.a.aW(C.a.n(C.a.n(J.dj(o,n),l),m),"#"))k="Hash Symbol(#) is not allowed"
-j=$.f1()
-i=o.toLowerCase()
-j=j.b
-if(!j.test(i))k="Its not a valid Email"
-j=P.eb("^(([a-zA-Z]{1})|([a-zA-Z]{1}[a-zA-Z]{1})|([a-zA-Z]{1}[0-9]{1})|([0-9]{1}[a-zA-Z]{1})|([a-zA-Z0-9][a-zA-Z0-9-_]{1,61}[a-zA-Z0-9]))\\.([a-zA-Z]{2,6}|[a-zA-Z0-9-]{2,30}\\.[a-zA-Z]{2,3})$")
-if(typeof n!="string")H.Z(H.ak(n))
-if(!j.b.test(n))k="Its not a valid Domain"
-if(o===""||n===""||m===""||l==="")k="It cant be empty"
-if(m.length>32)k="Master Password cant be longer than 32 characters"
-o=k!==""
-if(o)G.cC(k,"#ce4f4f","X","#5b0e0e")
-if(o){p=P.dr("INVALID INPUT")
-throw H.b(p)}h=F.hy(t,s,q,r)
-this.a.a=h
-p.getElementById("output").innerText=h}catch(g){H.az(g)}},
+try{o=document
+J.dS(o.querySelector("input"))
+n=u.q
+t=n.a(o.querySelector("#emailField")).value
+s=n.a(o.querySelector("#domainField")).value
+r=n.a(o.querySelector("#masterPasswordField")).value
+q=n.a(o.querySelector("#idField")).value
+n=t
+m=s
+l=r
+k=q
+j=H.fp(k,null)==null?"ID should be a number":""
+if(C.a.aW(C.a.n(C.a.n(J.dj(n,m),k),l),"#"))j="Hash Symbol(#) is not allowed"
+i=$.f1()
+h=n.toLowerCase()
+i=i.b
+if(!i.test(h))j="Its not a valid Email"
+i=P.eb("^(([a-zA-Z]{1})|([a-zA-Z]{1}[a-zA-Z]{1})|([a-zA-Z]{1}[0-9]{1})|([0-9]{1}[a-zA-Z]{1})|([a-zA-Z0-9][a-zA-Z0-9-_]{1,61}[a-zA-Z0-9]))\\.([a-zA-Z]{2,6}|[a-zA-Z0-9-]{2,30}\\.[a-zA-Z]{2,3})$")
+if(typeof m!="string")H.Z(H.ak(m))
+if(!i.b.test(m))j="Its not a valid Domain"
+if(n===""||m===""||l===""||k==="")j="It cant be empty"
+if(l.length>32)j="Master Password cant be longer than 32 characters"
+n=j!==""
+if(n)G.cC(j,"#ce4f4f","X","#5b0e0e")
+if(n){o=P.dr("INVALID INPUT")
+throw H.b(o)}g=F.hy(t,s,q,r)
+this.a.a=g
+o.getElementById("output").innerText=g
+p=o.querySelector("#copyButton")
+o=p.style
+o.display="unset"}catch(f){H.az(f)}},
 $S:7}
 F.dh.prototype={
 $1:function(a){var t,s,r,q,p
